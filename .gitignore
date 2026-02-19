@@ -1,2 +1,10 @@
 node_modules/
 .DS_Store
+
+# C++ build artifacts
+cpp/build/
+cpp/huffman_compressor
+cpp/*.exe
+
+# CodeQL artifacts
+_codeql_detected_source_root

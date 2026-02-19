@@ -1,0 +1,32 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Huffman Compressor",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-std=c++17",
+        "-O2",
+        "-o",
+        "${workspaceFolder}/cpp/huffman_compressor",
+        "${workspaceFolder}/cpp/huffman_compressor.cpp"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"],
+      "detail": "Compile huffman_compressor.cpp with g++ (C++17)"
+    },
+    {
+      "label": "Build and Run Huffman Compressor",
+      "type": "shell",
+      "command": "${workspaceFolder}/cpp/huffman_compressor",
+      "dependsOn": "Build Huffman Compressor",
+      "group": "build",
+      "problemMatcher": [],
+      "detail": "Compile and run huffman_compressor.cpp"
+    }
+  ]
+}
