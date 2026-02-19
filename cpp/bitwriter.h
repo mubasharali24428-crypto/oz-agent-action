@@ -30,6 +30,9 @@ public:
     /** Write a string of '0' and '1' characters as individual bits. */
     void writeBits(const std::string& bits) {
         for (char ch : bits) {
+            if (ch != '0' && ch != '1') {
+                throw std::invalid_argument(std::string("Invalid bit character: ") + ch);
+            }
             writeBit(ch == '1' ? 1 : 0);
         }
     }
