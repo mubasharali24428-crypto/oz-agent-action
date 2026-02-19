@@ -22,9 +22,10 @@
     {
       "label": "Build and Run Huffman Compressor",
       "type": "shell",
-      "command": "g++ -std=c++17 -O2 -o ${workspaceFolder}/cpp/huffman_compressor ${workspaceFolder}/cpp/huffman_compressor.cpp && ${workspaceFolder}/cpp/huffman_compressor",
+      "command": "${workspaceFolder}/cpp/huffman_compressor",
+      "dependsOn": "Build Huffman Compressor",
       "group": "build",
-      "problemMatcher": ["$gcc"],
+      "problemMatcher": [],
       "detail": "Compile and run huffman_compressor.cpp"
     }
   ]

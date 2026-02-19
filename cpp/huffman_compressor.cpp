@@ -533,7 +533,7 @@ static void decompressFile() {
 
 int main() {
     std::cout << "========================================\n";
-    std::cout << "   Huffman File Compressor (C++)        \n";
+    std::cout << "   Huffman File Compressor (C++)\n";
     std::cout << "========================================\n";
 
     while (true) {
